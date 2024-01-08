@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="https://static.tildacdn.com/tild6434-3636-4238-a465-666237633562/img_128015.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Практика DOM</title>
+</head>
+
+<body>
+  <header class="header">
+    <p class="header__text">Юдинских Илья 6407</p>
+    <button id="setup-button" class="header__button" type="button">Засетапить начальные значения</button>
+  </header>
+
+  <main class="main">
+
+    <div class="form-block">
+      <p class="form-block__title">Форма добавления карточки товара</p>
+      <form id="card-form" class="form-block__form">
+        <input class="form-block__input" name="name" type="text" placeholder="Название" required></input>
+        <input class="form-block__input" name="url" type="url" placeholder="Ссылка на изображение"></input>
+        <textarea class="form-block__input-description" name="description" cols="40" rows="5"
+          placeholder="Описание"></textarea>
+        <input class="form-block__input" name="code" type="number" placeholder="Код товара" required></input>
+        <input class="form-block__input" name="provider" type="text" placeholder="Поставщик" required></input>
+        <button class="form-block__submit" id="submit-button" type="submit">Отправить</button>
+        <button class="form-block__submit invisible" id="edit-button">Редактировать</button>
+      </form>
+    </div>
+
+    <div class="verticalLine"></div>
+
+    <div class="list-block">
+      <p class="list-block__title">Витрина карточек</p>
+      <div class="list-block__list">
+        <!-- <div class="list-block__card">
+            <div class="list-block__card-top">
+              <div class="list-block__card-id">Id: 123</div>
+              <a class="list-block__card-red" href="">Редачить</a>
+            </div>
+            <div class="list-block__card-main">
+              <img class="list-block__card-img" src="https://st.biglion.ru/c/w/672/h/378/cfs15/product/ab/c7/abc7d94d94b60d8abf4a1d4ae6599dca.jpg"/>
+              <div class="list-block__card-text">
+                <div class="list-block__card-name">Товар</div>
+                <div class="list-block__card-provider">Поставщик</div>
+              </div>
+            </div>
+            <div class="list-block__card-description">Описание</div>
+          </div>
+          пример карточки в HTMl-->
+      </div>
+    </div>
+  </main>
+
+  <script defer type="module" src="./main.js"></script>
+</body>
+
+</html>
