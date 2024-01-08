@@ -1,0 +1,182 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-block {
+    display: flex;
+    width: 41vw;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 26px;
+    padding-right: 55px;
+    &__title{
+        font: var(--font-h4);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    &__input {
+        border-radius: 16px;
+        background: rgb(197, 215, 196);
+        height: 48px;
+        border: 0;
+        padding-left: 20px;
+        &::placeholder {
+            font: var(--font-text);
+            color: black;
+        }
+    }
+    &__input-description {
+        border-radius: 16px;
+        background: rgb(197, 215, 196);
+        height: 137px;
+        min-height: 38px;
+        border: 0;
+        padding-left: 20px;
+        padding-top: 15px;
+        resize: vertical;
+        &::placeholder {
+            font: var(--font-text);
+            color: black;
+        }
+    }
+    
+    &__submit {
+        min-width: 113px;
+        height: 43px;
+        border-radius: 16px;
+        background: rgb(197, 215, 196);
+        margin-left: auto;
+        margin-right: 0;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        &:hover{
+            .transition(background-color);
+            background-color: rgb(133, 179, 130);
+        }
+        &:active{
+            .transition(background-color);
+            background-color: rgb(85, 165, 79);
+        }
+        &:focus{
+            border: 2px solid rgba(51, 51, 51, 0.48);
+        }
+    }
+}
+
+.verticalLine {
+    width: 20px;
+    border-left: 1px solid #000;
+    background: rgba(216, 216, 216, 0.18);
+    box-shadow: 0px -1px 0px 0px #E7E8EA inset;
+}
+
+.list-block {
+    padding-top: 26px;
+    padding-left: 16px;
+    width: 59vw;
+    &__title {
+        font: var(--font-h4);
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    &__card {
+        width: 260px;
+        min-height: 153px;
+        border-radius: 16px;
+        border: 1px solid #000;
+        background: rgb(197, 215, 196);
+        display: flex;
+        flex-direction: column;
+    }
+    &__card-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 4px;
+        padding-left: 26px;
+        padding-right: 10px;
+    }
+    &__card-id {
+        font: var(--font-text-s);
+    }
+    &__card-red {
+        font: var(--font-text-s);
+        font-weight: bold;
+        color: rgb(14, 101, 9);
+        text-decoration: none;
+        cursor: pointer;
+        &:link {
+            color: rgb(6, 123, 0);
+        }
+        &:visited {
+            color: rgb(7, 57, 5);
+        }
+    }
+    &__card-main {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        padding-left: 26px;
+        padding-right: 5px;
+        padding-top: 4px;
+    }
+    &__card-img {
+        width: 73px;
+        height: 60px;
+    }
+    &__card-text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card-name {
+        font: var(--font-h4);
+    }
+    &__card-provider {
+        font: var(--font-text-s);
+        font-style: italic;
+        padding-top: 4px;
+    }
+    &__card-description {
+        font: var(--font-text-s);
+        padding: 4px 5px 15px 26px;
+    }
+}
+
+.button {
+    margin-top: 26px;
+    margin-right: 19px;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white;
+    border-color: rgb(20, 128, 14);
+    color: rgb(20, 128, 14);
+    font: var(--font-text-s);
+    font-weight: bold;
+    &:hover{
+        .transition(background-color);
+        .transition(color);
+        background-color: rgb(197, 215, 196);
+        border-color: rgb(23, 103, 18);
+        color: rgb(23, 103, 18);
+    }
+    &:active{
+        .transition(background-color);
+        background-color: rgb(85, 165, 79);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.invisible {
+    display: none;
+}
