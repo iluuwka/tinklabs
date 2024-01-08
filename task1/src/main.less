@@ -1,0 +1,131 @@
+.title {
+    .text-h2();
+    display: flex;
+    justify-content: center;
+  }
+
+.frontendDev{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 128px;
+    gap: 64px;
+
+    &__text-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__subtitle{
+        font: var(--font-text);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+.title-block{
+    display: flex;
+    justify-content: center;
+    padding: 76px 224px 24px 224px;
+}
+.info-block{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 24px 128px;
+    gap: 48px;
+}
+.list{
+    list-style: '—';
+    margin-left: 12px;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .text-basic();
+    li{
+      padding-left: 8px;
+    }
+}
+  
+.block {
+    display: flex;
+    flex-flow: column nowrap;
+    // height: 100%;
+    min-height: 100%;
+    padding: 32px;
+    border-radius: var(--radius-l);
+    background-color: var(--base-01);
+
+    &__title {
+      .text-h4();
+      align-self: flex-start;
+    }
+  
+    &__info {
+      .text-basic();
+      margin: 0;
+    }
+
+    &__list{
+        list-style: '—';
+        margin-left: 12px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .text-basic();
+        li{
+          padding-left: 8px;
+        }
+    }
+    &__icon{
+        width: 36px;
+        height: 36px;
+        margin-bottom: 44px;
+    }
+    &__stage{
+        display: flex;
+        flex-flow: column nowrap;
+        // height: 100%;
+        min-height: 100%;
+        grid-row: 2/4;
+        grid-column: 1/4;
+        padding: 56px 32px 32px 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-l);
+        background-color: var(--base-01);
+    }
+    &__stage-info{
+        .text-basic();
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.stage{
+    display: grid;
+    grid-template-columns: 1fr 56px 1fr;
+    grid-template-rows: 28px 28px 1fr;
+
+    &__num{
+        background-color: var(--base-04);
+        display: flex;
+        border-radius: var(--radius-m);
+        font: var(--font-h4);
+        color: var(--base-01);
+        grid-row: 1/3;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

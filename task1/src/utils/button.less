@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 36px;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: var(--primary);
+    border-radius: var(--radius-s);
+    &:hover{
+      .transition(background-color);
+      background-color: var(--primary-hover);
+    }
+    &:active{
+      .transition(background-color);
+      background-color: var(--primary-active);
+    }
+    &:focus{
+      border: 2px solid rgba(51, 51, 51, 0.48);
+    }
+  }
