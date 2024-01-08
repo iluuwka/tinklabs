@@ -1,0 +1,40 @@
+.header {
+    height: 60px;
+    background-color: rgb(20, 128, 14);
+    max-width: 100vw;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 11px 9px 34px;
+
+    &__text {
+        font: var(--font-h4);
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 36px;
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        background-color: var(--primary);
+        border-radius: var(--radius-s);
+        &:hover{
+            .transition(background-color);
+            background-color: var(--primary-hover);
+        }
+        &:active{
+            .transition(background-color);
+            background-color: var(--primary-active);
+        }
+        &:focus{
+            border: 2px solid rgba(51, 51, 51, 0.48);
+        }
+    }
+}

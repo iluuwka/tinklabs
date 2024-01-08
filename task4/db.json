@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "18a24c731b9fb",
+      "name": "Чарончик",
+      "url": "https://sun9-3.userapi.com/impg/DLTZTzZHQtBqCRbUcOU9BWq-k7V1QAo1rIz5Bg/JXwbSw-DS30.jpg?size=750x985&quality=95&sign=4192999bf77deec2e5233c598db7c6e5&type=album",
+      "description": "вкусный сочный",
+      "code": 11,
+      "provider": "рука школьника"
+    },
+    {
+      "id": "82e43ecb3c924",
+      "name": "Молния",
+      "url": "https://st.biglion.ru/c/w/672/h/378/cfs15/product/ab/c7/abc7d94d94b60d8abf4a1d4ae6599dca.jpg",
+      "description": "уважает мам",
+      "code": 228,
+      "provider": "моя мама"
+    },
+    {
+      "id": "a7e5507b46df8",
+      "name": "бананчики",
+      "url": "https://ogorod-foodmarket.ru/image/cache/catalog/ovoschi-frukty-zelen/frukty/3/693214707-banany-650x650.jpg",
+      "description": "бананчики",
+      "code": "22",
+      "provider": "бананчики"
+    },
+    {
+      "id": "7827f6ba4d154",
+      "name": "chipi",
+      "url": "https://media1.tenor.com/m/mJ_Og97j5WwAAAAC/chipi-chapa.gif",
+      "description": "chapa",
+      "code": "33",
+      "provider": "chipi chapa"
+    }
+  ],
+  "profile": {
+    "name": "Юдинских Илья",
+    "group": "6407"
+  }
+}
