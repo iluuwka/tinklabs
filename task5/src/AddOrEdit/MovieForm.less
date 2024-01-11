@@ -1,0 +1,42 @@
+.movie-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &__block {
+        width: 100%;
+        height: 100%;
+        padding: 40px 60px 10px 60px;
+        gap: 30px;
+    }
+    
+    &__input {
+        border-radius: 8px;
+        background: #ECF1F7;
+        width: 500px;
+        height: 48px;
+        border: 0;
+        padding-left: 20px;
+        font: var(--font-text-m);
+        &::placeholder {
+            font: var(--font-text-m);
+            color: rgba(0, 0, 0, 0.724);
+        }
+    }
+    &__input-description {
+        border-radius: 8px;
+        background: #ECF1F7;
+        height: 137px;
+        min-height: 38px;
+        border: 0;
+        padding-left: 20px;
+        padding-top: 15px;
+        resize: vertical;
+        font: var(--font-text-m);
+        &::placeholder {
+            font: var(--font-text-m);
+            color: rgba(0, 0, 0, 0.724);
+        }
+    }
+}
